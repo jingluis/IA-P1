@@ -28,8 +28,8 @@ public class ServerState {
 
     public ServerState(ServerState state)
     {
-        this.servTime = state.servTime;
-        this.reqAssig = state.reqAssig;
+        this.servTime = state.servTime.clone();
+        this.reqAssig = state.reqAssig.clone();
         this.total_time = state.total_time;
     }
 
@@ -86,6 +86,7 @@ public class ServerState {
     //change the server assigned to the request with id = "id"
     public void modify_server(int id, int serv)
     {
+        if (reqAssig[id] == serv) return;
         if (!can_modify(id, serv)) return;
         int[] req = requestsList.getRequest(id);
         //the old transmission time due to the old server
@@ -132,6 +133,7 @@ public class ServerState {
     //swap the server assigned to the request id_1 i id_2
     public void swap_requests(int id_1, int id_2)
     {
+        if (id_1 == id_2) return;
         if(!can_swap_server(id_1, id_2)) return;
         int[] req1 = requestsList.getRequest(id_1);
         int[] req2 = requestsList.getRequest(id_2);
