@@ -78,6 +78,7 @@ public class ServerState {
     //check if is possible assign the server with id = "serv" to the request with id = "id"
     public boolean can_modify(int id, int serv)
     {
+        if (reqAssig[id] == serv) return false;
         int fileId = requestsList.getRequest(id)[1];
         Set<Integer> location = serversList.fileLocations(fileId);
         return location.contains(serv);
@@ -86,7 +87,6 @@ public class ServerState {
     //change the server assigned to the request with id = "id"
     public void modify_server(int id, int serv)
     {
-        if (reqAssig[id] == serv) return;
         if (!can_modify(id, serv)) return;
         int[] req = requestsList.getRequest(id);
         //the old transmission time due to the old server
@@ -113,6 +113,7 @@ public class ServerState {
     //check if the server assigned to the request id1 and id2 can be swapped
     public boolean can_swap_server(int id1, int id2)
     {
+        if (id1 == id2) return false;
         //server assigned to the request id1
         int server1 = reqAssig[id1];
 
@@ -133,7 +134,6 @@ public class ServerState {
     //swap the server assigned to the request id_1 i id_2
     public void swap_requests(int id_1, int id_2)
     {
-        if (id_1 == id_2) return;
         if(!can_swap_server(id_1, id_2)) return;
         int[] req1 = requestsList.getRequest(id_1);
         int[] req2 = requestsList.getRequest(id_2);
