@@ -4,6 +4,7 @@ import aima.search.framework.SuccessorFunction;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 
 public class ServerSuccessorFunction2 implements SuccessorFunction {
     public List getSuccessors(Object astate) {
@@ -32,11 +33,17 @@ public class ServerSuccessorFunction2 implements SuccessorFunction {
         else
         {
             int s = myRandom.nextInt(ServerState.serversList.size());
-            while(!newState.can_modify(i, s))
-            {
-                s = myRandom.nextInt(ServerState.serversList.size());
+            int fileId = ServerState.requestsList.getRequest(i)[1];
+            Set<Integer> available_servers = ServerState.serversList.fileLocations(fileId);
+            int chosed = myRandom.nextInt(available_servers.size());
+            int ite = 0;
+            for (int serv : available_servers) {
+                if (ite == chosed) {
+                    newState.modify_server(i, serv);
+                    break;
+                }
+                ++ite;
             }
-            newState.modify_server(i,s);
             successors.add(new Successor("change the server of the request "+i+" to "+s+"\n", newState));
         }
         return successors;

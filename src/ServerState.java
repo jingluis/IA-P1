@@ -75,19 +75,10 @@ public class ServerState {
 
     //state operators
 
-    //check if is possible assign the server with id = "serv" to the request with id = "id"
-    public boolean can_modify(int id, int serv)
-    {
-        if (reqAssig[id] == serv) return false;
-        int fileId = requestsList.getRequest(id)[1];
-        Set<Integer> location = serversList.fileLocations(fileId);
-        return location.contains(serv);
-    }
 
     //change the server assigned to the request with id = "id"
     public void modify_server(int id, int serv)
     {
-        if (!can_modify(id, serv)) return;
         int[] req = requestsList.getRequest(id);
         //the old transmission time due to the old server
         int oldTransmissionTime = serversList.tranmissionTime(reqAssig[id], req[0]);

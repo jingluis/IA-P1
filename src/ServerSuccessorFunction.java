@@ -1,8 +1,10 @@
+import IA.DistFS.Servers;
 import aima.search.framework.Successor;
 import aima.search.framework.SuccessorFunction;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class ServerSuccessorFunction implements SuccessorFunction {
     public List getSuccessors(Object astate) {
@@ -16,13 +18,12 @@ public class ServerSuccessorFunction implements SuccessorFunction {
                     successors.add(new Successor("swap servers beetwen "+i+" and "+j+"\n", newState));
                 }
             }
-
-            for (int s = 0; s < ServerState.serversList.size(); ++s) {
+            int fileId = ServerState.requestsList.getRequest(i)[1];
+            Set<Integer> available_servers = ServerState.serversList.fileLocations(fileId);
+            for (int serv : available_servers) {
                 ServerState newState = new ServerState(state);
-                if (newState.can_modify(i, s)) {
-                    newState.modify_server(i,s);
-                    successors.add(new Successor("change the server of the request "+i+" to "+s+"\n", newState));
-                }
+                newState.modify_server(i,serv);
+                successors.add(new Successor("change the server of the request "+i+" to "+serv+"\n", newState));
             }
         }
         return successors;
