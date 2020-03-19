@@ -3,6 +3,7 @@ import IA.DistFS.Servers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Set;
 
 public class ServerState {
@@ -233,4 +234,52 @@ public class ServerState {
         total_time = totalTime;
     }
 
+    //assign to a random first server that operates this request
+    public void initial_sol_3()
+    {
+        //create the array which stores the working time information of each server
+        int[] time = new int[serversList.size()];
+        Arrays.fill(time, 0);
+
+        //create the array which stores the server information of each server
+        int[] reques = new int[requestsList.size()];
+
+        int totalTime = 0;
+
+        for (int i = 0; i < requestsList.size(); ++i) {
+
+            //get the request
+            int[] req = requestsList.getRequest(i);
+
+            //get the random server which contains the requested file
+            Set<Integer> location = serversList.fileLocations(req[1]);
+            Random myRandom = new Random();
+            //get the index of the random choosed server
+            int chosed = myRandom.nextInt(location.size());
+            int ite = 0;
+            int targetServ = 0;
+            for (int serv : location) {
+                if (ite == chosed) {
+                    targetServ = serv;
+                    break;
+                }
+                ++ite;
+            }
+
+            //assign the server to the request
+            reques[i] = targetServ;
+
+            //get the transmission time of this file
+            int transmissionTime = serversList.tranmissionTime(targetServ, req[0]);
+
+            //add the transmission time to the target server
+            time[targetServ] += transmissionTime;
+
+            //increasing the total time accumulated
+            totalTime += transmissionTime;
+        }
+        servTime = time;
+        reqAssig = reques;
+        total_time = totalTime;
+    }
 }

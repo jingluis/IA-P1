@@ -35,6 +35,7 @@ public class ServerSuccessorFunction2 implements SuccessorFunction {
             int s = myRandom.nextInt(ServerState.serversList.size());
             int fileId = ServerState.requestsList.getRequest(i)[1];
             Set<Integer> available_servers = ServerState.serversList.fileLocations(fileId);
+            //get the index of the random choosed server
             int chosed = myRandom.nextInt(available_servers.size());
             int ite = 0;
             for (int serv : available_servers) {

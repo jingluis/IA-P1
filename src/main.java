@@ -11,9 +11,9 @@ import java.util.Properties;
 
 public class main {
     public static void main(String[] args) throws Exception {
-        ServerState state = new ServerState(200, 5, 1234, 50, 5, 1234);
-
-        state.initial_sol_1();
+        long startTime=System.currentTimeMillis();
+        ServerState state = new ServerState(250, 5, 1234, 50, 5, 1234);
+        state.initial_sol_2();
         Problem problem = new Problem(state, new ServerSuccessorFunction(), new ServerGoalTest(), new ServerHeuristicFunction1());
         Search search = new HillClimbingSearch();
         SearchAgent agent = new SearchAgent(problem, search);
@@ -21,12 +21,13 @@ public class main {
         printActions(agent.getActions());
         printInstrumentation(agent.getInstrumentation());
         System.out.println(((ServerState)search.getGoalState()).get_total_time());
-
         state.initial_sol_2();
         Problem problem2 = new Problem(state, new ServerSuccessorFunction2(), new ServerGoalTest(), new ServerHeuristicFunction2());
         Search search2 = new SimulatedAnnealingSearch();
         SearchAgent agent2 = new SearchAgent(problem2, search2);
         System.out.println(((ServerState)search2.getGoalState()).get_total_time());
+        long endTime=System.currentTimeMillis();
+        System.out.println((endTime - startTime) * 0.001);
     }
     private static void printInstrumentation(Properties properties) {
         Iterator keys = properties.keySet().iterator();
