@@ -40,6 +40,8 @@ public class ServerState {
         return total_time;
     }
 
+    public int get_server(int id_request) { return reqAssig[id_request];}
+
     public double get_variance()
     {
         // Compute mean (average
@@ -106,11 +108,6 @@ public class ServerState {
     public boolean can_swap_server(int id1, int id2)
     {
         if (id1 == id2) return false;
-        //server assigned to the request id1
-        int server1 = reqAssig[id1];
-
-        //server assigned to the request id2
-        int server2 = reqAssig[id2];
 
         int[] req1 = requestsList.getRequest(id1);
 
@@ -209,12 +206,13 @@ public class ServerState {
             int[] req = requestsList.getRequest(i);
 
             //find the server with less transmission time
-            int minTrans = Integer.MAX_VALUE;
-            int minServer = 0;
             Set<Integer> location = serversList.fileLocations(req[1]);
+            int minServer = location.iterator().next();
+            int minTrans = serversList.tranmissionTime(minServer, req[0]);
+
             for (Integer serv : location) {
                 int transmissionTime = serversList.tranmissionTime(serv, req[0]);
-                if (minTrans >= transmissionTime) {
+                if (minTrans > transmissionTime) {
                     minTrans = transmissionTime;
                     minServer = serv;
                 }

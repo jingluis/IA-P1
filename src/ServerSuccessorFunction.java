@@ -1,4 +1,4 @@
-import IA.DistFS.Servers;
+
 import aima.search.framework.Successor;
 import aima.search.framework.SuccessorFunction;
 
@@ -11,20 +11,25 @@ public class ServerSuccessorFunction implements SuccessorFunction {
         ArrayList<Successor> successors = new ArrayList<>();
         ServerState state = (ServerState) astate;
         for (int i = 0; i < ServerState.requestsList.size(); ++i) {
+            int fileId = ServerState.requestsList.getRequest(i)[1];
+            Set<Integer> available_servers = ServerState.serversList.fileLocations(fileId);
+
             for (int j = i+1; j < ServerState.requestsList.size(); ++j) {
-                ServerState newState = new ServerState(state);
-                if (newState.can_swap_server(i, j)) {
+                if (state.can_swap_server(i, j)) {
+                    ServerState newState = new ServerState(state);
                     newState.swap_requests(i, j);
                     successors.add(new Successor("swap servers beetwen "+i+" and "+j+"\n", newState));
                 }
             }
-            int fileId = ServerState.requestsList.getRequest(i)[1];
-            Set<Integer> available_servers = ServerState.serversList.fileLocations(fileId);
+
             for (int serv : available_servers) {
-                ServerState newState = new ServerState(state);
-                newState.modify_server(i,serv);
-                successors.add(new Successor("change the server of the request "+i+" to "+serv+"\n", newState));
+                if (serv != state.get_server(i)) {
+                    ServerState newState = new ServerState(state);
+                    newState.modify_server(i, serv);
+                    successors.add(new Successor("change the server of the request " + i + " to " + serv + "\n", newState));
+                }
             }
+
         }
         return successors;
     }
