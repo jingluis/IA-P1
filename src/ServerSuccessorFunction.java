@@ -14,13 +14,13 @@ public class ServerSuccessorFunction implements SuccessorFunction {
             int fileId = ServerState.requestsList.getRequest(i)[1];
             Set<Integer> available_servers = ServerState.serversList.fileLocations(fileId);
 
-            for (int j = i+1; j < ServerState.requestsList.size(); ++j) {
+            /*for (int j = i+1; j < ServerState.requestsList.size(); ++j) {
                 if (state.can_swap_server(i, j)) {
                     ServerState newState = new ServerState(state);
                     newState.swap_requests(i, j);
                     successors.add(new Successor("swap servers beetwen "+i+" and "+j+"\n", newState));
                 }
-            }
+            }*/
 
             for (int serv : available_servers) {
                 if (serv != state.get_server(i)) {
