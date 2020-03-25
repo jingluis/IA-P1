@@ -1,0 +1,865 @@
+replicaciones: 5
+max initime: 18572
+total initime: 469231
+seed1: -1251027927
+seed2: -1987645769
+totaltime: 480352
+maxtime: 16541
+exectime: 0.256
+nodesExpanded : 9
+max initime: 19760
+total initime: 470438
+seed1: 135541359
+seed2: 908557035
+totaltime: 487329
+maxtime: 16065
+exectime: 0.131
+nodesExpanded : 9
+max initime: 15699
+total initime: 444570
+seed1: 110792871
+seed2: 346582031
+totaltime: 497142
+maxtime: 10713
+exectime: 0.521
+nodesExpanded : 56
+max initime: 17002
+total initime: 464621
+seed1: -138546605
+seed2: 616078153
+totaltime: 538435
+maxtime: 11227
+exectime: 0.619
+nodesExpanded : 79
+max initime: 18225
+total initime: 475268
+seed1: -1901824391
+seed2: 578192963
+totaltime: 561150
+maxtime: 11747
+exectime: 0.5710000000000001
+nodesExpanded : 77
+max initime: 17577
+total initime: 478458
+seed1: -918791595
+seed2: 1198639707
+totaltime: 539481
+maxtime: 12512
+exectime: 0.323
+nodesExpanded : 39
+max initime: 15168
+total initime: 443134
+seed1: 1865528922
+seed2: 829589354
+totaltime: 461287
+maxtime: 12956
+exectime: 0.109
+nodesExpanded : 14
+max initime: 18421
+total initime: 501731
+seed1: -1555608220
+seed2: 1876474446
+totaltime: 592853
+maxtime: 12292
+exectime: 0.859
+nodesExpanded : 102
+max initime: 16087
+total initime: 459042
+seed1: -1343799541
+seed2: -245514338
+totaltime: 495870
+maxtime: 12323
+exectime: 0.213
+nodesExpanded : 29
+max initime: 17695
+total initime: 501353
+seed1: 559917428
+seed2: 856287535
+totaltime: 555604
+maxtime: 13343
+exectime: 0.326
+nodesExpanded : 39
+avg exec time: 0.39280000000000004
+avg max time: 12971.9
+avg init time: 17420.6
+avg diff time: 4448.699999999999
+avg total time: 520950.3
+--------------------------
+max initime: 18572
+total initime: 469231
+seed1: -1251027927
+seed2: -1987645769
+totaltime: 475688
+maxtime: 13941
+exectime: 0.299
+nodesExpanded : 45
+max initime: 19760
+total initime: 470438
+seed1: 135541359
+seed2: 908557035
+totaltime: 480030
+maxtime: 15696
+exectime: 0.259
+nodesExpanded : 42
+max initime: 15699
+total initime: 444570
+seed1: 110792871
+seed2: 346582031
+totaltime: 450155
+maxtime: 14320
+exectime: 0.156
+nodesExpanded : 25
+max initime: 17002
+total initime: 464621
+seed1: -138546605
+seed2: 616078153
+totaltime: 469233
+maxtime: 13215
+exectime: 0.244
+nodesExpanded : 34
+max initime: 18225
+total initime: 475268
+seed1: -1901824391
+seed2: 578192963
+totaltime: 480085
+maxtime: 14135
+exectime: 0.241
+nodesExpanded : 38
+max initime: 17577
+total initime: 478458
+seed1: -918791595
+seed2: 1198639707
+totaltime: 483270
+maxtime: 13767
+exectime: 0.243
+nodesExpanded : 37
+max initime: 15168
+total initime: 443134
+seed1: 1865528922
+seed2: 829589354
+totaltime: 446326
+maxtime: 13544
+exectime: 0.171
+nodesExpanded : 26
+max initime: 18421
+total initime: 501731
+seed1: -1555608220
+seed2: 1876474446
+totaltime: 509668
+maxtime: 13414
+exectime: 0.278
+nodesExpanded : 40
+max initime: 16087
+total initime: 459042
+seed1: -1343799541
+seed2: -245514338
+totaltime: 465163
+maxtime: 12772
+exectime: 0.201
+nodesExpanded : 32
+max initime: 17695
+total initime: 501353
+seed1: 559917428
+seed2: 856287535
+totaltime: 509407
+maxtime: 14390
+exectime: 0.263
+nodesExpanded : 38
+avg exec time: 0.2355
+avg max time: 13919.4
+avg init time: 17420.6
+avg diff time: 3501.199999999999
+avg total time: 476902.5
+                           
+replicaciones: 10
+max initime: 13828
+total initime: 307971
+seed1: -2144717824
+seed2: -175703054
+totaltime: 379613
+maxtime: 8326
+exectime: 1.141
+nodesExpanded : 70
+max initime: 12325
+total initime: 305623
+seed1: 838699686
+seed2: -1264014628
+totaltime: 356092
+maxtime: 7881
+exectime: 1.074
+nodesExpanded : 65
+max initime: 10500
+total initime: 317566
+seed1: -1991883050
+seed2: -259746170
+totaltime: 357563
+maxtime: 7995
+exectime: 0.629
+nodesExpanded : 39
+max initime: 11755
+total initime: 285573
+seed1: 1867746313
+seed2: -2056391437
+totaltime: 354174
+maxtime: 7495
+exectime: 1.405
+nodesExpanded : 96
+max initime: 11290
+total initime: 290957
+seed1: -1444928508
+seed2: 1856751928
+totaltime: 334964
+maxtime: 7859
+exectime: 0.632
+nodesExpanded : 40
+max initime: 11565
+total initime: 292717
+seed1: 799694216
+seed2: 206981881
+totaltime: 362811
+maxtime: 7622
+exectime: 1.743
+nodesExpanded : 101
+max initime: 11741
+total initime: 283969
+seed1: -1234335875
+seed2: -1065521140
+totaltime: 326006
+maxtime: 8441
+exectime: 0.41100000000000003
+nodesExpanded : 26
+max initime: 11953
+total initime: 308265
+seed1: -1201602446
+seed2: 1669567996
+totaltime: 342835
+maxtime: 8892
+exectime: 0.439
+nodesExpanded : 29
+max initime: 10908
+total initime: 285903
+seed1: -324233056
+seed2: -511367
+totaltime: 321187
+maxtime: 7069
+exectime: 1.095
+nodesExpanded : 65
+max initime: 12470
+total initime: 296848
+seed1: 538236112
+seed2: 521837823
+totaltime: 304955
+maxtime: 10026
+exectime: 0.181
+nodesExpanded : 10
+avg exec time: 0.875
+avg max time: 8160.6
+avg init time: 11833.5
+avg diff time: 3672.8999999999996
+avg total time: 344020.0
+--------------------------
+max initime: 13828
+total initime: 307971
+seed1: -2144717824
+seed2: -175703054
+totaltime: 312076
+maxtime: 8832
+exectime: 0.578
+nodesExpanded : 43
+max initime: 12325
+total initime: 305623
+seed1: 838699686
+seed2: -1264014628
+totaltime: 310321
+maxtime: 8994
+exectime: 0.596
+nodesExpanded : 43
+max initime: 10500
+total initime: 317566
+seed1: -1991883050
+seed2: -259746170
+totaltime: 321204
+maxtime: 9348
+exectime: 0.397
+nodesExpanded : 29
+max initime: 11755
+total initime: 285573
+seed1: 1867746313
+seed2: -2056391437
+totaltime: 290623
+maxtime: 8457
+exectime: 0.555
+nodesExpanded : 43
+max initime: 11290
+total initime: 290957
+seed1: -1444928508
+seed2: 1856751928
+totaltime: 295371
+maxtime: 8924
+exectime: 0.441
+nodesExpanded : 35
+max initime: 11565
+total initime: 292717
+seed1: 799694216
+seed2: 206981881
+totaltime: 297868
+maxtime: 7844
+exectime: 0.533
+nodesExpanded : 36
+max initime: 11741
+total initime: 283969
+seed1: -1234335875
+seed2: -1065521140
+totaltime: 286474
+maxtime: 8195
+exectime: 0.499
+nodesExpanded : 34
+max initime: 11953
+total initime: 308265
+seed1: -1201602446
+seed2: 1669567996
+totaltime: 313135
+maxtime: 8339
+exectime: 0.713
+nodesExpanded : 53
+max initime: 10908
+total initime: 285903
+seed1: -324233056
+seed2: -511367
+totaltime: 288383
+maxtime: 8652
+exectime: 0.44
+nodesExpanded : 32
+max initime: 12470
+total initime: 296848
+seed1: 538236112
+seed2: 521837823
+totaltime: 301102
+maxtime: 8526
+exectime: 0.651
+nodesExpanded : 46
+avg exec time: 0.5403
+avg max time: 8611.1
+avg init time: 11833.5
+avg diff time: 3222.3999999999996
+avg total time: 301655.7
+                           
+replicaciones: 15
+max initime: 13424
+total initime: 221768
+seed1: -360155375
+seed2: 480849326
+totaltime: 268812
+maxtime: 6188
+exectime: 1.891
+nodesExpanded : 75
+max initime: 8952
+total initime: 213768
+seed1: 1770137458
+seed2: -893224879
+totaltime: 247723
+maxtime: 5870
+exectime: 0.9420000000000001
+nodesExpanded : 41
+max initime: 9054
+total initime: 205926
+seed1: 32629758
+seed2: -1729466749
+totaltime: 258555
+maxtime: 5832
+exectime: 1.195
+nodesExpanded : 53
+max initime: 8617
+total initime: 223882
+seed1: -262783455
+seed2: -308671405
+totaltime: 260941
+maxtime: 6593
+exectime: 0.708
+nodesExpanded : 27
+max initime: 10252
+total initime: 209131
+seed1: 475992051
+seed2: -2078634553
+totaltime: 249723
+maxtime: 6044
+exectime: 1.288
+nodesExpanded : 53
+max initime: 8209
+total initime: 208773
+seed1: -85780376
+seed2: -1401263035
+totaltime: 240846
+maxtime: 6525
+exectime: 0.47300000000000003
+nodesExpanded : 20
+max initime: 8764
+total initime: 229449
+seed1: -2062337431
+seed2: 1159440491
+totaltime: 266638
+maxtime: 6419
+exectime: 1.53
+nodesExpanded : 58
+max initime: 12217
+total initime: 225709
+seed1: -206438176
+seed2: 2063489870
+totaltime: 301448
+maxtime: 6302
+exectime: 2.226
+nodesExpanded : 86
+max initime: 10194
+total initime: 223550
+seed1: -1625458124
+seed2: -722545294
+totaltime: 281125
+maxtime: 6305
+exectime: 1.889
+nodesExpanded : 72
+max initime: 7706
+total initime: 222681
+seed1: -865531947
+seed2: 1097985787
+totaltime: 253922
+maxtime: 5472
+exectime: 1.6480000000000001
+nodesExpanded : 64
+avg exec time: 1.379
+avg max time: 6155.0
+avg init time: 9738.9
+avg diff time: 3583.8999999999996
+avg total time: 262973.3
+--------------------------
+max initime: 13424
+total initime: 221768
+seed1: -360155375
+seed2: 480849326
+totaltime: 225250
+maxtime: 6827
+exectime: 0.999
+nodesExpanded : 46
+max initime: 8952
+total initime: 213768
+seed1: 1770137458
+seed2: -893224879
+totaltime: 218020
+maxtime: 6704
+exectime: 1.0130000000000001
+nodesExpanded : 50
+max initime: 9054
+total initime: 205926
+seed1: 32629758
+seed2: -1729466749
+totaltime: 209470
+maxtime: 6804
+exectime: 0.9450000000000001
+nodesExpanded : 50
+max initime: 8617
+total initime: 223882
+seed1: -262783455
+seed2: -308671405
+totaltime: 228015
+maxtime: 6322
+exectime: 1.192
+nodesExpanded : 53
+max initime: 10252
+total initime: 209131
+seed1: 475992051
+seed2: -2078634553
+totaltime: 212654
+maxtime: 5860
+exectime: 0.904
+nodesExpanded : 45
+max initime: 8209
+total initime: 208773
+seed1: -85780376
+seed2: -1401263035
+totaltime: 213531
+maxtime: 6398
+exectime: 0.769
+nodesExpanded : 39
+max initime: 8764
+total initime: 229449
+seed1: -2062337431
+seed2: 1159440491
+totaltime: 232698
+maxtime: 6733
+exectime: 0.924
+nodesExpanded : 43
+max initime: 12217
+total initime: 225709
+seed1: -206438176
+seed2: 2063489870
+totaltime: 229231
+maxtime: 7339
+exectime: 1.026
+nodesExpanded : 47
+max initime: 10194
+total initime: 223550
+seed1: -1625458124
+seed2: -722545294
+totaltime: 226378
+maxtime: 6954
+exectime: 0.8
+nodesExpanded : 37
+max initime: 7706
+total initime: 222681
+seed1: -865531947
+seed2: 1097985787
+totaltime: 225226
+maxtime: 6616
+exectime: 0.89
+nodesExpanded : 37
+avg exec time: 0.9462000000000002
+avg max time: 6655.7
+avg init time: 9738.9
+avg diff time: 3083.2
+avg total time: 222047.3
+                           
+replicaciones: 20
+max initime: 7894
+total initime: 177223
+seed1: 1870268257
+seed2: 1911947549
+totaltime: 208245
+maxtime: 5467
+exectime: 1.365
+nodesExpanded : 37
+max initime: 9099
+total initime: 198145
+seed1: -534931677
+seed2: 1869788122
+totaltime: 237648
+maxtime: 5312
+exectime: 3.1430000000000002
+nodesExpanded : 76
+max initime: 10040
+total initime: 198075
+seed1: -70264744
+seed2: 718352595
+totaltime: 256997
+maxtime: 6694
+exectime: 2.1630000000000003
+nodesExpanded : 55
+max initime: 10276
+total initime: 177303
+seed1: 366389076
+seed2: 1683628915
+totaltime: 223625
+maxtime: 4864
+exectime: 3.516
+nodesExpanded : 97
+max initime: 8305
+total initime: 191807
+seed1: 3693907
+seed2: -150993727
+totaltime: 229071
+maxtime: 5056
+exectime: 2.418
+nodesExpanded : 62
+max initime: 7940
+total initime: 194698
+seed1: 456075099
+seed2: 1628186800
+totaltime: 233699
+maxtime: 5581
+exectime: 1.736
+nodesExpanded : 45
+max initime: 9128
+total initime: 187380
+seed1: -290958192
+seed2: 1635416496
+totaltime: 240464
+maxtime: 5621
+exectime: 3.394
+nodesExpanded : 88
+max initime: 8940
+total initime: 191625
+seed1: -1925773093
+seed2: 1294525336
+totaltime: 246647
+maxtime: 5734
+exectime: 2.932
+nodesExpanded : 74
+max initime: 8618
+total initime: 177200
+seed1: 925221332
+seed2: 118716253
+totaltime: 202420
+maxtime: 5532
+exectime: 0.9410000000000001
+nodesExpanded : 26
+max initime: 8028
+total initime: 174162
+seed1: 2135105348
+seed2: -144690372
+totaltime: 210798
+maxtime: 5205
+exectime: 2.301
+nodesExpanded : 72
+avg exec time: 2.3909
+avg max time: 5506.6
+avg init time: 8826.8
+avg diff time: 3320.199999999999
+avg total time: 228961.4
+--------------------------
+max initime: 7894
+total initime: 177223
+seed1: 1870268257
+seed2: 1911947549
+totaltime: 181147
+maxtime: 5059
+exectime: 1.816
+nodesExpanded : 57
+max initime: 9099
+total initime: 198145
+seed1: -534931677
+seed2: 1869788122
+totaltime: 201015
+maxtime: 5981
+exectime: 1.536
+nodesExpanded : 43
+max initime: 10040
+total initime: 198075
+seed1: -70264744
+seed2: 718352595
+totaltime: 202133
+maxtime: 6211
+exectime: 2.181
+nodesExpanded : 65
+max initime: 10276
+total initime: 177303
+seed1: 366389076
+seed2: 1683628915
+totaltime: 180611
+maxtime: 5571
+exectime: 1.372
+nodesExpanded : 46
+max initime: 8305
+total initime: 191807
+seed1: 3693907
+seed2: -150993727
+totaltime: 194021
+maxtime: 5851
+exectime: 1.42
+nodesExpanded : 47
+max initime: 7940
+total initime: 194698
+seed1: 456075099
+seed2: 1628186800
+totaltime: 198214
+maxtime: 6085
+exectime: 1.228
+nodesExpanded : 40
+max initime: 9128
+total initime: 187380
+seed1: -290958192
+seed2: 1635416496
+totaltime: 192436
+maxtime: 6170
+exectime: 1.8800000000000001
+nodesExpanded : 62
+max initime: 8940
+total initime: 191625
+seed1: -1925773093
+seed2: 1294525336
+totaltime: 195304
+maxtime: 5930
+exectime: 1.337
+nodesExpanded : 44
+max initime: 8618
+total initime: 177200
+seed1: 925221332
+seed2: 118716253
+totaltime: 180637
+maxtime: 5039
+exectime: 1.484
+nodesExpanded : 48
+max initime: 8028
+total initime: 174162
+seed1: 2135105348
+seed2: -144690372
+totaltime: 178361
+maxtime: 5620
+exectime: 1.447
+nodesExpanded : 52
+avg exec time: 1.5701
+avg max time: 5751.7
+avg init time: 8826.8
+avg diff time: 3075.0999999999995
+avg total time: 190387.9
+                           
+replicaciones: 25
+max initime: 6428
+total initime: 155897
+seed1: -423421129
+seed2: -1102431619
+totaltime: 187629
+maxtime: 3983
+exectime: 4.194
+nodesExpanded : 85
+max initime: 8057
+total initime: 160583
+seed1: -1427441986
+seed2: 2051097164
+totaltime: 191902
+maxtime: 5115
+exectime: 2.0140000000000002
+nodesExpanded : 42
+max initime: 8212
+total initime: 174092
+seed1: 2002014178
+seed2: 1873660259
+totaltime: 234802
+maxtime: 5393
+exectime: 3.9130000000000003
+nodesExpanded : 69
+max initime: 5843
+total initime: 148987
+seed1: -1705214614
+seed2: 1387353077
+totaltime: 179909
+maxtime: 4189
+exectime: 2.02
+nodesExpanded : 45
+max initime: 6833
+total initime: 160384
+seed1: -1670261789
+seed2: 174605495
+totaltime: 193820
+maxtime: 4586
+exectime: 2.313
+nodesExpanded : 47
+max initime: 8083
+total initime: 146441
+seed1: -1827799850
+seed2: 942727068
+totaltime: 179332
+maxtime: 5605
+exectime: 1.318
+nodesExpanded : 30
+max initime: 8707
+total initime: 172928
+seed1: -257441999
+seed2: 311605208
+totaltime: 194114
+maxtime: 7248
+exectime: 0.532
+nodesExpanded : 10
+max initime: 6762
+total initime: 163721
+seed1: -907120106
+seed2: -1895641306
+totaltime: 199597
+maxtime: 4601
+exectime: 3.419
+nodesExpanded : 66
+max initime: 10776
+total initime: 161103
+seed1: 792992627
+seed2: 603549618
+totaltime: 202481
+maxtime: 4894
+exectime: 3.636
+nodesExpanded : 74
+max initime: 6667
+total initime: 162344
+seed1: 100785671
+seed2: -239640814
+totaltime: 181398
+maxtime: 4760
+exectime: 1.22
+nodesExpanded : 26
+avg exec time: 2.4579
+avg max time: 5037.4
+avg init time: 7636.8
+avg diff time: 2599.4000000000005
+avg total time: 194498.4
+--------------------------
+max initime: 6428
+total initime: 155897
+seed1: -423421129
+seed2: -1102431619
+totaltime: 158058
+maxtime: 4851
+exectime: 1.976
+nodesExpanded : 47
+max initime: 8057
+total initime: 160583
+seed1: -1427441986
+seed2: 2051097164
+totaltime: 163773
+maxtime: 4856
+exectime: 2.211
+nodesExpanded : 52
+max initime: 8212
+total initime: 174092
+seed1: 2002014178
+seed2: 1873660259
+totaltime: 178478
+maxtime: 6646
+exectime: 2.625
+nodesExpanded : 52
+max initime: 5843
+total initime: 148987
+seed1: -1705214614
+seed2: 1387353077
+totaltime: 152234
+maxtime: 4930
+exectime: 1.847
+nodesExpanded : 48
+max initime: 6833
+total initime: 160384
+seed1: -1670261789
+seed2: 174605495
+totaltime: 163108
+maxtime: 4831
+exectime: 1.843
+nodesExpanded : 43
+max initime: 8083
+total initime: 146441
+seed1: -1827799850
+seed2: 942727068
+totaltime: 150031
+maxtime: 5008
+exectime: 1.819
+nodesExpanded : 49
+max initime: 8707
+total initime: 172928
+seed1: -257441999
+seed2: 311605208
+totaltime: 176295
+maxtime: 5951
+exectime: 2.412
+nodesExpanded : 58
+max initime: 6762
+total initime: 163721
+seed1: -907120106
+seed2: -1895641306
+totaltime: 166069
+maxtime: 5392
+exectime: 2.212
+nodesExpanded : 48
+max initime: 10776
+total initime: 161103
+seed1: 792992627
+seed2: 603549618
+totaltime: 165335
+maxtime: 5287
+exectime: 2.129
+nodesExpanded : 51
+max initime: 6667
+total initime: 162344
+seed1: 100785671
+seed2: -239640814
+totaltime: 164867
+maxtime: 4897
+exectime: 2.02
+nodesExpanded : 50
+avg exec time: 2.1094
+avg max time: 5264.9
+avg init time: 7636.8
+avg diff time: 2371.9000000000005
+avg total time: 163824.8
+
