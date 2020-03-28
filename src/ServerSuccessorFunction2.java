@@ -12,7 +12,8 @@ public class ServerSuccessorFunction2 implements SuccessorFunction {
         ServerState state = (ServerState) astate;
         Random myRandom = new Random();
         //determine which operator will be chosen
-        int operator = myRandom.nextInt(2);
+        //int operator = myRandom.nextInt(2);
+        int operator = 1;
         int i = myRandom.nextInt(ServerState.requestsList.size());
 
         ServerState newState = new ServerState(state);
