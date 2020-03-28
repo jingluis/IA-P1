@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Properties;
 import java.util.Random;
 import java.util.Scanner;
+import java.lang.Math;
 
 public class main {
     public static void main(String[] args) throws Exception {
@@ -30,10 +31,10 @@ public class main {
     	case 1:
     	//experiment 1
     		int[] seeds1 = seedgen(10);
-    		hillclimbingtest(200, 5, 50, 5, seeds1, true, new ServerHeuristicFunction1(), new ServerSuccessorFunction(), 2);
-    		//hillclimbingtest(200, 5, 50, 5, seeds1, true, new ServerHeuristicFunction1(), new ServerSuccessorFunctionModify(), 2);
-    		//hillclimbingtest(200, 5, 50, 5, seeds1, true, new ServerHeuristicFunction1(), new ServerSuccessorFunctionSwap(), 2);
-    		//hillclimbingtest(200, 5, 50, 5, seeds1, true, new ServerHeuristicFunction1(), new ServerSuccessorFunctionModifySwap(), 2);
+    		//hillclimbingtest(200, 5, 50, 5, seeds1, true, new ServerHeuristicFunction1(), new ServerSuccessorFunction(), 2);
+    		hillclimbingtest(200, 5, 50, 5, seeds1, true, new ServerHeuristicFunction1(), new ServerSuccessorFunctionModify(), 2);
+    		hillclimbingtest(200, 5, 50, 5, seeds1, true, new ServerHeuristicFunction1(), new ServerSuccessorFunctionSwap(), 2);
+    		hillclimbingtest(200, 5, 50, 5, seeds1, true, new ServerHeuristicFunction1(), new ServerSuccessorFunctionModifySwap(), 2);
     		break;
     		
     	case 2:
@@ -46,32 +47,34 @@ public class main {
     	
     	case 3:
     	//experiment 3
-	    	for (double lamb = 0.001; lamb < 0.005; lamb += 0.001) {
-	    		System.out.println("k: " + 20);
+    		for (int k = 1; k <= 512; k *= 2) {
+	    	/*for (double lamb = 0.002; lamb <= 0.005; lamb += 0.001) {
+	    		System.out.println("k: " + k);
 	    		System.out.println("lamb: " + lamb);
 	    		int[] seeds = seedgen(10);
-	    		simulatedannealingtest(150000, 100, 20, lamb, seeds, false, new ServerHeuristicFunction1(), new ServerSuccessorFunction2());
+	    		simulatedannealingtest(100000, 100, k, lamb, seeds, false, new ServerHeuristicFunction1(), new ServerSuccessorFunction2());
 	    		System.out.println("-----------------------------------");
-	    	}
-	    	for (double lamb = 0.005; lamb <= 0.05; lamb += 0.005) {
-	    		System.out.println("k: " + 20);
+	    	}*/
+	    	for (double lamb = 0.000001; lamb <= 1; lamb *= 10) {
+	    		System.out.println("k: " + k);
 	    		System.out.println("lamb: " + lamb);
 	    		int[] seeds = seedgen(10);
-	    		simulatedannealingtest(150000, 100, 20, lamb, seeds, false, new ServerHeuristicFunction1(), new ServerSuccessorFunction2());
+	    		simulatedannealingtest(100000, 100, k, lamb, seeds, false, new ServerHeuristicFunction1(), new ServerSuccessorFunction2());
 	    		System.out.println("-----------------------------------");
 	    	}
-	    	for (int k = 10; k <= 50; k+=2) {
+    		}
+	    	/*for (int k = 5; k <= 50; k+=5) {
 	    		System.out.println("k: " + k);
 				System.out.println("lamb: " + 0.005);
 				int[] seeds = seedgen(10);
 				simulatedannealingtest(100000, 100, k, 0.005, seeds, false, new ServerHeuristicFunction1(), new ServerSuccessorFunction2());
 				System.out.println("-----------------------------------");
-	    	}
+	    	}*/
 	    	break;
     	
 	    case 4:
     	//experiment 4
-	    	for (int k = 100; k <= 1100; k += 100) {
+	    	for (int k = 100; k <= 1000; k += 100) {
 	    		System.out.println("users: " + k);
 	    		int[] seeds = seedgen(10);
 	    		hillclimbingtest(k,5,50,5,seeds,false, new ServerHeuristicFunction1(), new ServerSuccessorFunction(), 2);
@@ -87,18 +90,23 @@ public class main {
     	
 	    case 5:
     	//experiment 5
-	    	int[] seeds5 = seedgen(10);
-	    	hillclimbingtest(200, 5, 50, 5, seeds5,true, new ServerHeuristicFunction1(), new ServerSuccessorFunction(), 2);
+	    	int[] seeds5 = seedgen(50);
+	    	hillclimbingtest(200, 5, 50, 5, seeds5,false, new ServerHeuristicFunction1(), new ServerSuccessorFunction(), 2);
+	    	//hillclimbingtest(200, 5, 50, 5, seeds5,false, new ServerHeuristicFunction2(), new ServerSuccessorFunction(), 2);
 	    	System.out.println("-----------------------------");
-	    	hillclimbingtest(200, 5, 50, 5, seeds5,true, new ServerHeuristicFunction2(), new ServerSuccessorFunction(), 2);
+	    	hillclimbingtest(200, 5, 50, 5, seeds5,false, new ServerHeuristicFunction3(), new ServerSuccessorFunction(), 2);
+	    	System.out.println("-----------------------------");
+	    	//hillclimbingtest(200, 5, 50, 5, seeds5,false, new ServerHeuristicFunction4(), new ServerSuccessorFunction(), 2);
+	    	System.out.println("-----------------------------");
+	    	//hillclimbingtest(200, 5, 50, 5, seeds5,false, new ServerHeuristicFunction5(), new ServerSuccessorFunction(), 2);
 	    	break;
 	    
 	    case 6:
 	    //experiment 6
-	    	int[] seeds6 = seedgen(10);
-	    	simulatedannealingtest(100000, 100, 20, 0.005, seeds6, true, new ServerHeuristicFunction1(), new ServerSuccessorFunction2());
+	    	int[] seeds6 = seedgen(50);
+	    	simulatedannealingtest(100000, 100, 20, 0.005, seeds6, false, new ServerHeuristicFunction1(), new ServerSuccessorFunction2());
 	    	System.out.println("-----------------------------");
-	    	simulatedannealingtest(100000, 100, 20, 0.005, seeds6, true, new ServerHeuristicFunction2(), new ServerSuccessorFunction2());
+	    	simulatedannealingtest(100000, 100, 20, 0.005, seeds6, false, new ServerHeuristicFunction3(), new ServerSuccessorFunction2());
 	    	break;
 	    
 	    case 7:
@@ -106,9 +114,9 @@ public class main {
 	    	for (int k = 5; k <= 25; k += 5) {
 	    		System.out.println("replicaciones: " + k);
 	    		int[] seeds = seedgen(10);
-	    		hillclimbingtest(200,5,50,k,seeds,true, new ServerHeuristicFunction1(), new ServerSuccessorFunction(), 2);
+	    		hillclimbingtest(200,5,50,k,seeds,false, new ServerHeuristicFunction1(), new ServerSuccessorFunction(), 2);
 	    		System.out.println("--------------------------");
-	    		hillclimbingtest(200,5,50,k,seeds,true, new ServerHeuristicFunction2(), new ServerSuccessorFunction(), 2);
+	    		hillclimbingtest(200,5,50,k,seeds,false, new ServerHeuristicFunction3(), new ServerSuccessorFunction(), 2);
 	    		System.out.println("                           ");
 	    	}
 	    	break;
@@ -184,6 +192,8 @@ public class main {
             	System.out.println("maxtime: " + ((ServerState)search.getGoalState()).getMaxServerTime());
             	System.out.println("exectime: " + (endTime-startTime)*0.001);
             	printInstrumentation(agent.getInstrumentation());
+            } else {
+            	System.out.println((endTime-startTime) + " " + ((ServerState)search.getGoalState()).get_total_time());
             }
     	}
     	System.out.println("avg exec time: " + exectime/((double)iters));
@@ -220,6 +230,9 @@ public class main {
             	System.out.println("totaltime: " + ((ServerState)search.getGoalState()).get_total_time());
             	System.out.println("maxtime: " + ((ServerState)search.getGoalState()).getMaxServerTime());
             	System.out.println("exectime: " + (endTime-startTime)*0.001);
+            } else {
+            	//System.out.println(((ServerState)search.getGoalState()).getMaxServerTime());
+            	System.out.println((endTime-startTime) + " " + ((ServerState)search.getGoalState()).get_total_time() + " " + Math.sqrt(((ServerState)search.getGoalState()).get_variance()));
             }
     	}
     	System.out.println("avg exec time: " + exectime/((double)iters));
